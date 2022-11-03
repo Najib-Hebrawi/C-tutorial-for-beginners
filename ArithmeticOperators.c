@@ -1,12 +1,10 @@
 #include <stdio.h>
 
+int main()
+{
 
-
-int main(){
-    
-    
     // arithmetic operators
- 
+
     // + (addition)
     // - (subtraction)
     // * (multiplication)
@@ -14,11 +12,11 @@ int main(){
     // % (modulus)
     // ++ increment
     // -- decrement
- 
+
     int x = 5;
     int y = 2;
-    
-     int z = x + y;
+
+    int z = x + y;
     // int z = x - y;
     // int z = x * y;
     // float z = x / (float) y;
@@ -26,12 +24,10 @@ int main(){
     // x++;
     // y--;
 
-    printf("%d", x);
+    printf("%d\n", x);
     printf("%d\n", y);
-
 
     printf("%d", z);
 
-    
     return 0;
 }
