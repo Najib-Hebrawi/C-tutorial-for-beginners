@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-int factorial(int n)
+float factorial(int n)
 {
-    int f = 1;
-    int i;
+    float f = 1;
+    float i;
 
     for (i = 1; i <= n; i++)
     {
@@ -14,9 +14,9 @@ int factorial(int n)
 
 int main()
 {
-    int k;
+    float k;
     printf("Enter a positive integer: ");
-    scanf("%d", &k);
-    int fk = factorial(k);
-    printf("The value of %d factorial is %d\n\n", k, fk);
+    scanf("%f", &k);
+    float fk = factorial(k);
+    printf("The value of %f factorial is %f\n\n", k, fk);
 }
