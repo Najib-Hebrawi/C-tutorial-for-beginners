@@ -4,9 +4,9 @@ int main()
 {
 
     int temperature[] = {18, 16, 14, 13, 14, 17, 17};
-    float sum = 0;
-    float mean = 0;
-    float size = sizeof(temperature) / sizeof(temperature[0]);
+    double sum = 0;
+    double mean = 0;
+    int size = sizeof(temperature) / sizeof(temperature[0]);
 
     for (int i = 0; i < size; i++)
     {
@@ -21,7 +21,7 @@ int main()
 
     printf("----------------------------------------------------------------\n");
 
-    // sortere array først så kan vi finde meiden.
+    // sortere array først så kan vi finde median.
     for (int i = 0; i < size - 1; i++)
     {
         for (int j = 0; j < size - i - 1; j++)
@@ -34,9 +34,9 @@ int main()
             }
         }
     }
-  
-float median;
-   
+
+    double median;
+
     /* calculation median */
     if (size % 2 == 0)
         median = (temperature[(size / 2) - 1] + temperature[(size / 2)]) / 2.0;
@@ -45,8 +45,10 @@ float median;
 
     /*printing result */
 
-    for (i = 0; i < size; i++)
-        printf("%f\t", temperature[i]);
+    for (int i = 0; i < size; i++)
+    {
+        printf(" temperature som er sorteret:  %d\t", temperature[i]);
+    }
 
     printf("\nMedian er %f\n", median);
 
