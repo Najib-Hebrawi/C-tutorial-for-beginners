@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-float factorial(int n)
+float factorial(int k)
 {
     float f = 1;
     float i;
 
-    for (i = 1; i <= n; i++)
+    for (i = 1; i <= k; i++)
     {
         f = f * i;
     }
